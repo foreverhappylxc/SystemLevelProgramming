@@ -1,0 +1,203 @@
+<html>
+<head>
+<link rel=stylesheet href="/css/cteform.css" type="text/css">
+<title>Practical Quiz 3 &amp;copy; 2002-2005 iCarnegie, Inc. - UI Version 3.15</title>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<script language="JavaScript1.2">
+CTEUtils_ImgDirURL = "/img";
+CTEUtils_CssDirURL = "/css";
+CTEUtils_JsDirURL = "/js";
+</script>
+<script language="JavaScript1.2" src="/js/ctesortable.js"></script><script language="JavaScript">var filelisting_2609320_tbl_info = new Array();
+filelisting_2609320_tbl_info[1] = new Array();
+filelisting_2609320_tbl_info[1]["name"] = "Size";
+filelisting_2609320_tbl_info[1]["type"] = "number";
+filelisting_2609320_tbl_info[2] = new Array();
+filelisting_2609320_tbl_info[2]["name"] = "Status";
+filelisting_2609320_tbl_info[2]["type"] = "string";
+filelisting_2609320_tbl_info[3] = new Array();
+filelisting_2609320_tbl_info[3]["name"] = "File Type";
+filelisting_2609320_tbl_info[3]["type"] = "string";
+filelisting_2609320_tbl_info[4] = new Array();
+filelisting_2609320_tbl_info[4]["name"] = "Download";
+filelisting_2609320_tbl_info[4]["type"] = "string";
+var filelisting_2609320_tbl = new Object;
+filelisting_2609320_tbl.name = 'filelisting_2609320_tbl';
+filelisting_2609320_tbl.info = filelisting_2609320_tbl_info;
+var filelisting_2609323_tbl_info = new Array();
+filelisting_2609323_tbl_info[1] = new Array();
+filelisting_2609323_tbl_info[1]["name"] = "Size";
+filelisting_2609323_tbl_info[1]["type"] = "number";
+filelisting_2609323_tbl_info[2] = new Array();
+filelisting_2609323_tbl_info[2]["name"] = "Status";
+filelisting_2609323_tbl_info[2]["type"] = "string";
+filelisting_2609323_tbl_info[3] = new Array();
+filelisting_2609323_tbl_info[3]["name"] = "File Type";
+filelisting_2609323_tbl_info[3]["type"] = "string";
+filelisting_2609323_tbl_info[4] = new Array();
+filelisting_2609323_tbl_info[4]["name"] = "Download";
+filelisting_2609323_tbl_info[4]["type"] = "string";
+var filelisting_2609323_tbl = new Object;
+filelisting_2609323_tbl.name = 'filelisting_2609323_tbl';
+filelisting_2609323_tbl.info = filelisting_2609323_tbl_info;
+var filelisting_2609326_tbl_info = new Array();
+filelisting_2609326_tbl_info[1] = new Array();
+filelisting_2609326_tbl_info[1]["name"] = "Size";
+filelisting_2609326_tbl_info[1]["type"] = "number";
+filelisting_2609326_tbl_info[2] = new Array();
+filelisting_2609326_tbl_info[2]["name"] = "Status";
+filelisting_2609326_tbl_info[2]["type"] = "string";
+filelisting_2609326_tbl_info[3] = new Array();
+filelisting_2609326_tbl_info[3]["name"] = "File Type";
+filelisting_2609326_tbl_info[3]["type"] = "string";
+filelisting_2609326_tbl_info[4] = new Array();
+filelisting_2609326_tbl_info[4]["name"] = "Download";
+filelisting_2609326_tbl_info[4]["type"] = "string";
+var filelisting_2609326_tbl = new Object;
+filelisting_2609326_tbl.name = 'filelisting_2609326_tbl';
+filelisting_2609326_tbl.info = filelisting_2609326_tbl_info;
+var Assm = new Object;
+Assm.name = 'Assm';
+Assm.postRenderings = new Array();
+</script></head><body onload="">
+Practical Quiz 3<br>
+<br><hr>
+  <td width=5><a name="top_2609320"></a></td>
+  <table><tr>
+<td width=5><br></td>  <td class=td0_highlight-label width=12 align=right valign=top nowrap >
+     <span class=highlight-label >1.</span></td>
+<td width=5><br></td>  <td valign=top class=td0_x align=left > <a href="#2609320">Go to bottom of question.</a> </td>
+</tr></table>
+<table><tr>
+<td width=5><br></td>  <td valign=top class=td0_x align=left > 
+<p>
+Write your solution in a text or Word file and submit it below.
+</p>
+
+<p>3M decides to make Post-Its by printing yellow squares on white pieces of paper.  As part of the printing process, they need to set the CMYK (cyan, magenta, yellow, black) value for every point in the square.  3M hires you to determine the efficiency of the following algorithms on a machine with a 2048-byte direct-mapped data cache with 32-byte blocks.  You are given the following definitions:
+</p>
+<pre><blockquote>struct point_color {
+	int c;
+	int m;
+	int y;
+	int k;
+};
+
+struct point_color square[16][16];
+int i, j;
+</blockquote></pre>
+
+<p>
+Assume the following:<ul>
+	<li><kbd>sizeof(int) == 4</kbd>.</li>
+	<li><kbd>square</kbd> begins at memory address 0.</li>
+	<li>The cache is initially empty.</li>
+	<li>The only memory accesses are to the entries of the array <kbd>square</kbd>.  Variables <kbd>i</kbd> and <kbd>j</kbd> are stored in registers.</li>
+</ul>
+<p></p>
+
+<p>Determine the cache performance of the following code:</p>
+
+<pre><blockquote>for(i = 0; i < 16; i++) {
+	for(j = 0; j < 16; j++) {
+		square[i][j].c = 0;
+		square[i][j].m = 0;
+		square[i][j].y = 1;
+		square[i][j].k = 0;
+	}
+}</blockquote></pre>
+
+<p><b>A. What is the total number of writes?<br/>
+B. What is the total number of writes that miss in the cache?<br/>
+C. What is the miss rate?</b></p>
+
+
+<br/><br/>
+
+ </td>
+<td width=5><br></td></tr></table>
+<a name="2609320"></a><table><tr>
+<td width=5><br></td>  <td valign=top class=td0_x align=left > <a href="#top_2609320">Go to top of question.</a> </td>
+</tr></table>
+<td width=5><br>
+</td>
+<hr><td width=5><br></td><a name="top_2609323"></a><table><tr>
+<td width=5><br></td>  <td class=td0_highlight-label width=12 align=right valign=top nowrap >
+     <span class=highlight-label >2.</span></td>
+<td width=5><br></td>  <td valign=top class=td0_x align=left > <a href="#2609323">Go to bottom of question.</a> </td>
+</tr></table>
+<table><tr>
+<td width=5><br></td>  <td valign=top class=td0_x align=left > 
+<p>
+Write your solution in a text or Word file and submit it below.
+</p>
+
+<p>Given the assumptions in Problem 1, determine the cache performance of the following code:</p>
+<pre><blockquote>for(i = 0; i < 16; i++) {
+	for(j = 0; j < 16; j++) {
+		square[j][i].c = 0;
+		square[j][i].m = 0;
+		square[j][i].y = 1;
+		square[j][i].k = 0;
+	}
+}
+</blockquote></pre>
+
+<p><b>A. What is the total number of writes?<br/>
+B. What is the total number of writes that miss in the cache?<br/>
+C. What is the miss rate?</b></p>
+
+
+<br/><br/>
+
+ </td>
+<td width=5><br></td></tr></table>
+<a name="2609323"></a><table><tr>
+<td width=5><br></td>  <td valign=top class=td0_x align=left > <a href="#top_2609323">Go to top of question.</a> </td>
+</tr></table>
+<td width=5><br></td>
+<hr><td width=5><br></td><a name="top_2609326"></a><table><tr>
+<td width=5><br></td>  <td class=td0_highlight-label width=12 align=right valign=top nowrap >
+     <span class=highlight-label >3.</span></td>
+<td width=5><br></td>  <td valign=top class=td0_x align=left > <a href="#2609326">Go to bottom of question.</a> </td>
+</tr></table>
+<table><tr>
+<td width=5><br></td>  <td valign=top class=td0_x align=left > 
+<p>
+Write your solution in a text or Word file and submit it below.
+</p>
+
+<p>Given the assumptions in Problem 1, determine the cache performance of the following code:</p>
+<pre><blockquote>for(i = 0; i < 16; i++) {
+	for(j = 0; j < 16; j++) {
+		square[i][j].y = 1;
+	}
+}
+for(i = 0; i < 16; i++) {
+	for(j = 0; j < 16; j++) {
+		square[i][j].c = 0;
+		square[i][j].m = 0;
+		square[i][j].k = 0;
+	}
+}
+</blockquote></pre>
+
+<p><b>A. What is the total number of writes?</b><br/>
+<b>B. What is the total number of writes that miss in the cache?</b><br/>
+<b>C. What is the miss rate?</b></p>
+
+ </td>
+<td width=5><br></td></tr></table>
+<a name="2609326"></a><table><tr>
+<td width=5><br></td>  <td valign=top class=td0_x align=left > <a href="#top_2609326">Go to top of question.</a> </td>
+</tr></table>
+<table><tr>
+<td width=5><br></td>  <td class=td0_copyright  align=left valign=top >
+     <span class=copyright ><br>&#169; Copyright 2002 iCarnegie, Inc.  All rights reserved.</span></td>
+</tr></table>
+
+
+</body></html> 
+ 
+ 
+

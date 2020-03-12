@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: tinylinker - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Z1588\AppData\Local\Temp\RSPDCB.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/tinylinker.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\系统级编程\实验\week10\tinylinker\getopt.c"
+"F:\系统级编程\实验\week10\tinylinker\main.c"
+]
+Creating command line "cl.exe @C:\Users\Z1588\AppData\Local\Temp\RSPDCB.tmp" 
+Creating temporary file "C:\Users\Z1588\AppData\Local\Temp\RSPDDB.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/tinylinker.pdb" /debug /machine:I386 /out:"Debug/tinylinker.exe" /pdbtype:sept 
+".\Debug\getopt.obj"
+".\Debug\linker.obj"
+".\Debug\main.obj"
+]
+Creating command line "link.exe @C:\Users\Z1588\AppData\Local\Temp\RSPDDB.tmp"
+<h3>Output Window</h3>
+Compiling...
+getopt.c
+main.c
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/tinylinker.bsc"  ".\Debug\getopt.sbr" ".\Debug\linker.sbr" ".\Debug\main.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+tinylinker.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

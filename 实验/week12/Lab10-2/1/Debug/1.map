@@ -1,0 +1,205 @@
+ 1
+
+ Timestamp is 5ddb49bc (Mon Nov 25 11:25:48 2019)
+
+ Preferred load address is 00400000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000cb8H .text                   CODE
+ 0001:00000cc0 000000acH .text$x                 CODE
+ 0002:00000000 00000174H .rdata                  DATA
+ 0002:00000178 00000044H .rdata$r                DATA
+ 0002:000001c0 00000150H .xdata$x                DATA
+ 0002:00000310 00000000H .edata                  DATA
+ 0003:00000000 00000004H .CRT$XCA                DATA
+ 0003:00000004 00000004H .CRT$XCZ                DATA
+ 0003:00000008 00000004H .CRT$XIA                DATA
+ 0003:0000000c 00000004H .CRT$XIZ                DATA
+ 0003:00000010 0000005cH .data                   DATA
+ 0003:00000070 0000003cH .bss                    DATA
+ 0004:00000000 0000003cH .idata$2                DATA
+ 0004:0000003c 00000014H .idata$3                DATA
+ 0004:00000050 000000dcH .idata$4                DATA
+ 0004:0000012c 000000dcH .idata$5                DATA
+ 0004:00000208 000001d4H .idata$6                DATA
+
+  Address         Publics by Value              Rva+Base     Lib:Object
+
+ 0001:00000000       ?parse1@@YAHPAVCString@@H0@Z 00401000 f   项目源程序-substitute.obj
+ 0001:000001b0       ?parse@@YA_NPAVCString@@00@Z 004011b0 f   项目源程序-substitute.obj
+ 0001:00000220       ?substitute@@YAXPAVCString@@00@Z 00401220 f   项目源程序-substitute.obj
+ 0001:000002c0       ?do_substitutions@@YAXPAVCString@@0@Z 004012c0 f   项目源程序-substitute.obj
+ 0001:00000580       ?process_file@@YAXPAVCString@@0@Z 00401580 f   项目源程序-substitute.obj
+ 0001:000007e0       _main                      004017e0 f   项目源程序-substitute.obj
+ 0001:00000910       ??1AFX_EXCEPTION_LINK@@QAE@XZ 00401910 f i 项目源程序-substitute.obj
+ 0001:00000944       ??1CString@@QAE@XZ         00401944 f   mfc42d:MFC42D.DLL
+ 0001:0000094a       ?Insert@CString@@QAEHHPBD@Z 0040194a f   mfc42d:MFC42D.DLL
+ 0001:00000950       ??BCString@@QBEPBDXZ       00401950 f   mfc42d:MFC42D.DLL
+ 0001:00000956       ??0CString@@QAE@DH@Z       00401956 f   mfc42d:MFC42D.DLL
+ 0001:0000095c       ??ACString@@QBEDH@Z        0040195c f   mfc42d:MFC42D.DLL
+ 0001:00000962       ?Empty@CString@@QAEXXZ     00401962 f   mfc42d:MFC42D.DLL
+ 0001:00000968       ?Find@CString@@QBEHPBDH@Z  00401968 f   mfc42d:MFC42D.DLL
+ 0001:0000096e       ?Delete@CString@@QAEHHH@Z  0040196e f   mfc42d:MFC42D.DLL
+ 0001:00000974       ?GetLength@CString@@QBEHXZ 00401974 f   mfc42d:MFC42D.DLL
+ 0001:0000097a       ?AfxAssertFailedLine@@YGHPBDH@Z 0040197a f   mfc42d:MFC42D.DLL
+ 0001:00000980       ?IsKindOf@CObject@@QBEHPBUCRuntimeClass@@@Z 00401980 f   mfc42d:MFC42D.DLL
+ 0001:00000986       ??1CStdioFile@@UAE@XZ      00401986 f   mfc42d:MFC42D.DLL
+ 0001:0000098c       ?ReadString@CStdioFile@@UAEHAAVCString@@@Z 0040198c f   mfc42d:MFC42D.DLL
+ 0001:00000992       ??0CString@@QAE@XZ         00401992 f   mfc42d:MFC42D.DLL
+ 0001:00000998       ??0CStdioFile@@QAE@PBDI@Z  00401998 f   mfc42d:MFC42D.DLL
+ 0001:0000099e       ??0AFX_EXCEPTION_LINK@@QAE@XZ 0040199e f   mfc42d:MFC42D.DLL
+ 0001:000009a4       ??1CFile@@UAE@XZ           004019a4 f   mfc42d:MFC42D.DLL
+ 0001:000009aa       ?SetLength@CFile@@UAEXK@Z  004019aa f   mfc42d:MFC42D.DLL
+ 0001:000009b0       ?Write@CFile@@UAEXPBXI@Z   004019b0 f   mfc42d:MFC42D.DLL
+ 0001:000009b6       ?Open@CFile@@UAEHPBDIPAVCFileException@@@Z 004019b6 f   mfc42d:MFC42D.DLL
+ 0001:000009bc       ?Close@CFile@@UAEXXZ       004019bc f   mfc42d:MFC42D.DLL
+ 0001:000009c2       ??3@YAXPAX@Z               004019c2 f   mfc42d:MFC42D.DLL
+ 0001:000009c8       ??0CString@@QAE@PBD@Z      004019c8 f   mfc42d:MFC42D.DLL
+ 0001:000009ce       ?Read@CFile@@UAEIPAXI@Z    004019ce f   mfc42d:MFC42D.DLL
+ 0001:000009d4       ??2@YAPAXI@Z               004019d4 f   mfc42d:MFC42D.DLL
+ 0001:000009da       ?GetLength@CFile@@UBEKXZ   004019da f   mfc42d:MFC42D.DLL
+ 0001:000009e0       ??0CFile@@QAE@PBDI@Z       004019e0 f   mfc42d:MFC42D.DLL
+ 0001:000009e6       ?AfxTryCleanup@@YGXXZ      004019e6 f   mfc42d:MFC42D.DLL
+ 0001:000009ec       ___CxxFrameHandler         004019ec f   msvcrtd:MSVCRTD.dll
+ 0001:000009f2       __chkesp                   004019f2 f   msvcrtd:MSVCRTD.dll
+ 0001:00000a00       ??0type_info@@AAE@ABV0@@Z  00401a00 f   msvcrtd:ti_inst.obj
+ 0001:00000a20       ??_Etype_info@@UAEPAXI@Z   00401a20 f i msvcrtd:ti_inst.obj
+ 0001:00000a20       ??_Gtype_info@@UAEPAXI@Z   00401a20 f i msvcrtd:ti_inst.obj
+ 0001:00000a50       ??4type_info@@AAEAAV0@ABV0@@Z 00401a50 f   msvcrtd:ti_inst.obj
+ 0001:00000a60       _mainCRTStartup            00401a60 f   msvcrtd:crtexe.obj
+ 0001:00000ba8       ??1type_info@@UAE@XZ       00401ba8 f   msvcrtd:MSVCRTD.dll
+ 0001:00000bae       __exit                     00401bae f   msvcrtd:MSVCRTD.dll
+ 0001:00000bb4       __XcptFilter               00401bb4 f   msvcrtd:MSVCRTD.dll
+ 0001:00000bba       _exit                      00401bba f   msvcrtd:MSVCRTD.dll
+ 0001:00000bc0       ___p___initenv             00401bc0 f   msvcrtd:MSVCRTD.dll
+ 0001:00000bc6       ___getmainargs             00401bc6 f   msvcrtd:MSVCRTD.dll
+ 0001:00000bcc       __initterm                 00401bcc f   msvcrtd:MSVCRTD.dll
+ 0001:00000be0       __setdefaultprecision      00401be0 f   msvcrtd:fp8.obj
+ 0001:00000bf8       ___setusermatherr          00401bf8 f   msvcrtd:MSVCRTD.dll
+ 0001:00000c00       __matherr                  00401c00 f   msvcrtd:merr.obj
+ 0001:00000c10       __setargv                  00401c10 f   msvcrtd:dllargv.obj
+ 0001:00000c16       ___p__commode              00401c16 f   msvcrtd:MSVCRTD.dll
+ 0001:00000c1c       ___p__fmode                00401c1c f   msvcrtd:MSVCRTD.dll
+ 0001:00000c30       __onexit                   00401c30 f   msvcrtd:atonexit.obj
+ 0001:00000c70       _atexit                    00401c70 f   msvcrtd:atonexit.obj
+ 0001:00000c88       ___set_app_type            00401c88 f   msvcrtd:MSVCRTD.dll
+ 0001:00000c8e       __except_handler3          00401c8e f   msvcrtd:MSVCRTD.dll
+ 0001:00000c94       __controlfp                00401c94 f   msvcrtd:MSVCRTD.dll
+ 0001:00000c9a       ___dllonexit               00401c9a f   msvcrtd:MSVCRTD.dll
+ 0001:00000ca0       ??6ostream@@QAEAAV0@H@Z    00401ca0 f   msvcirtd:MSVCIRTD.dll
+ 0001:00000ca6       ??6ostream@@QAEAAV0@P6AAAV0@AAV0@@Z@Z 00401ca6 f   msvcirtd:MSVCIRTD.dll
+ 0001:00000cac       ?endl@@YAAAVostream@@AAV1@@Z 00401cac f   msvcirtd:MSVCIRTD.dll
+ 0001:00000cb2       ??6ostream@@QAEAAV0@PBD@Z  00401cb2 f   msvcirtd:MSVCIRTD.dll
+ 0002:0000001c       ??_C@_01HMO@?$CC?$AA@      0040201c     项目源程序-substitute.obj
+ 0002:00000020       ??_C@_0CC@MNCG@File?5could?5not?5be?5opened?5or?5read@ 00402020     项目源程序-substitute.obj
+ 0002:00000044       ??_C@_0DM@NEBN@F?3?2?O?$LF?M?$LD?$LM?$LG?$LB?$OA?$LD?L?2?J?$LF?Q?i?2week12?2Lab10?9@ 00402044     项目源程序-substitute.obj
+ 0002:00000080       ??_C@_0BP@GDNH@Bad?5pattern?1replacement?5line?3?5?$AA@ 00402080     项目源程序-substitute.obj
+ 0002:000000a0       ??_C@_01FCOA@?5?$AA@       004020a0     项目源程序-substitute.obj
+ 0002:000000a4       ??_C@_0CK@LOOD@Usage?3?5substitute?5subs?9file?5src1@ 004020a4     项目源程序-substitute.obj
+ 0002:000000d0       ??_C@_0BL@LBMK@Not?5enough?5input?5arguments?$AA@ 004020d0     项目源程序-substitute.obj
+ 0002:000000f0       _IID_IDocHostUIHandlerDispatch 004020f0     mfcs42d:stdafx.obj
+ 0002:00000100       _IID_IInternalConnection   00402100     mfcs42d:stdafx.obj
+ 0002:00000110       _IID_IAxWinAmbientDispatch 00402110     mfcs42d:stdafx.obj
+ 0002:00000120       _IID_IAxWinHostWindow      00402120     mfcs42d:stdafx.obj
+ 0002:00000130       _IID_IRegistrar            00402130     mfcs42d:stdafx.obj
+ 0002:00000140       _CLSID_Registrar           00402140     mfcs42d:stdafx.obj
+ 0002:00000150       _LIBID_ATLLib              00402150     mfcs42d:stdafx.obj
+ 0002:00000164       ??_7type_info@@6B@         00402164     msvcrtd:ti_inst.obj
+ 0002:00000178       ??_R1A@?0A@A@type_info@@8  00402178     msvcrtd:ti_inst.obj
+ 0002:00000190       ??_R2type_info@@8          00402190     msvcrtd:ti_inst.obj
+ 0002:00000198       ??_R3type_info@@8          00402198     msvcrtd:ti_inst.obj
+ 0002:000001a8       ??_R4type_info@@6B@        004021a8     msvcrtd:ti_inst.obj
+ 0003:00000000       ___xc_a                    00403000     msvcrtd:cinitexe.obj
+ 0003:00000004       ___xc_z                    00403004     msvcrtd:cinitexe.obj
+ 0003:00000008       ___xi_a                    00403008     msvcrtd:cinitexe.obj
+ 0003:0000000c       ___xi_z                    0040300c     msvcrtd:cinitexe.obj
+ 0003:00000010       ??_R0PAVCFileException@@@8 00403010     项目源程序-substitute.obj
+ 0003:00000030       ?__LINE__Var@?1??do_substitutions@@YAXPAVCString@@0@Z@4FA 00403030     项目源程序-substitute.obj
+ 0003:00000034       ?__LINE__Var@?1??process_file@@YAXPAVCString@@0@Z@4FA 00403034     项目源程序-substitute.obj
+ 0003:00000038       ?GUID_ATLVer30@ATL@@3U_GUID@@A 00403038     mfcs42d:stdafx.obj
+ 0003:00000050       ??_R0?AVtype_info@@@8      00403050     msvcrtd:ti_inst.obj
+ 0003:00000068       ___defaultmatherr          00403068     msvcrtd:merr.obj
+ 0003:00000070       __afxForceEXCLUDE          00403070     mfcs42d:nolib.obj
+ 0003:00000074       ?ATL_CREATE_OBJECT@CComApartment@ATL@@2IA 00403074     mfcs42d:stdafx.obj
+ 0003:00000078       ?m_libid@CComModule@ATL@@2U_GUID@@A 00403078     mfcs42d:stdafx.obj
+ 0003:00000088       ?_pModule@ATL@@3PAVCComModule@1@A 00403088     mfcs42d:stdafx.obj
+ 0003:0000008c       __afxForceSTDAFX           0040308c     mfcs42d:stdafx.obj
+ 0003:00000090       __dowildcard               00403090     msvcrtd:wildcard.obj
+ 0003:00000094       __newmode                  00403094     msvcrtd:_newmode.obj
+ 0003:00000098       __commode                  00403098     msvcrtd:xncommod.obj
+ 0003:0000009c       __fmode                    0040309c     msvcrtd:xtxtmode.obj
+ 0003:000000a0       ___onexitend               004030a0     <common>
+ 0003:000000a4       ___onexitbegin             004030a4     <common>
+ 0003:000000a8       __adjust_fdiv              004030a8     <common>
+ 0004:00000000       __IMPORT_DESCRIPTOR_MFC42D 00404000     mfc42d:MFC42D.DLL
+ 0004:00000014       __IMPORT_DESCRIPTOR_MSVCRTD 00404014     msvcrtd:MSVCRTD.dll
+ 0004:00000028       __IMPORT_DESCRIPTOR_MSVCIRTD 00404028     msvcirtd:MSVCIRTD.dll
+ 0004:0000003c       __NULL_IMPORT_DESCRIPTOR   0040403c     mfc42d:MFC42D.DLL
+ 0004:0000012c       __imp_??1CString@@QAE@XZ   0040412c     mfc42d:MFC42D.DLL
+ 0004:00000130       __imp_?Insert@CString@@QAEHHPBD@Z 00404130     mfc42d:MFC42D.DLL
+ 0004:00000134       __imp_??BCString@@QBEPBDXZ 00404134     mfc42d:MFC42D.DLL
+ 0004:00000138       __imp_??0CString@@QAE@DH@Z 00404138     mfc42d:MFC42D.DLL
+ 0004:0000013c       __imp_??ACString@@QBEDH@Z  0040413c     mfc42d:MFC42D.DLL
+ 0004:00000140       __imp_?Empty@CString@@QAEXXZ 00404140     mfc42d:MFC42D.DLL
+ 0004:00000144       __imp_?Find@CString@@QBEHPBDH@Z 00404144     mfc42d:MFC42D.DLL
+ 0004:00000148       __imp_?Delete@CString@@QAEHHH@Z 00404148     mfc42d:MFC42D.DLL
+ 0004:0000014c       __imp_?GetLength@CString@@QBEHXZ 0040414c     mfc42d:MFC42D.DLL
+ 0004:00000150       __imp_?AfxAssertFailedLine@@YGHPBDH@Z 00404150     mfc42d:MFC42D.DLL
+ 0004:00000154       __imp_?IsKindOf@CObject@@QBEHPBUCRuntimeClass@@@Z 00404154     mfc42d:MFC42D.DLL
+ 0004:00000158       __imp_?classCFileException@CFileException@@2UCRuntimeClass@@B 00404158     mfc42d:MFC42D.DLL
+ 0004:0000015c       __imp_??1CStdioFile@@UAE@XZ 0040415c     mfc42d:MFC42D.DLL
+ 0004:00000160       __imp_?ReadString@CStdioFile@@UAEHAAVCString@@@Z 00404160     mfc42d:MFC42D.DLL
+ 0004:00000164       __imp_??0CString@@QAE@XZ   00404164     mfc42d:MFC42D.DLL
+ 0004:00000168       __imp_??0CStdioFile@@QAE@PBDI@Z 00404168     mfc42d:MFC42D.DLL
+ 0004:0000016c       __imp_??0AFX_EXCEPTION_LINK@@QAE@XZ 0040416c     mfc42d:MFC42D.DLL
+ 0004:00000170       __imp_??1CFile@@UAE@XZ     00404170     mfc42d:MFC42D.DLL
+ 0004:00000174       __imp_?SetLength@CFile@@UAEXK@Z 00404174     mfc42d:MFC42D.DLL
+ 0004:00000178       __imp_?Write@CFile@@UAEXPBXI@Z 00404178     mfc42d:MFC42D.DLL
+ 0004:0000017c       __imp_?Open@CFile@@UAEHPBDIPAVCFileException@@@Z 0040417c     mfc42d:MFC42D.DLL
+ 0004:00000180       __imp_?Close@CFile@@UAEXXZ 00404180     mfc42d:MFC42D.DLL
+ 0004:00000184       __imp_??3@YAXPAX@Z         00404184     mfc42d:MFC42D.DLL
+ 0004:00000188       __imp_??0CString@@QAE@PBD@Z 00404188     mfc42d:MFC42D.DLL
+ 0004:0000018c       __imp_?Read@CFile@@UAEIPAXI@Z 0040418c     mfc42d:MFC42D.DLL
+ 0004:00000190       __imp_??2@YAPAXI@Z         00404190     mfc42d:MFC42D.DLL
+ 0004:00000194       __imp_?GetLength@CFile@@UBEKXZ 00404194     mfc42d:MFC42D.DLL
+ 0004:00000198       __imp_??0CFile@@QAE@PBDI@Z 00404198     mfc42d:MFC42D.DLL
+ 0004:0000019c       __imp_?AfxTryCleanup@@YGXXZ 0040419c     mfc42d:MFC42D.DLL
+ 0004:000001a0       \177MFC42D_NULL_THUNK_DATA 004041a0     mfc42d:MFC42D.DLL
+ 0004:000001a4       __imp_??6ostream@@QAEAAV0@PBD@Z 004041a4     msvcirtd:MSVCIRTD.dll
+ 0004:000001a8       __imp_?endl@@YAAAVostream@@AAV1@@Z 004041a8     msvcirtd:MSVCIRTD.dll
+ 0004:000001ac       __imp_??6ostream@@QAEAAV0@P6AAAV0@AAV0@@Z@Z 004041ac     msvcirtd:MSVCIRTD.dll
+ 0004:000001b0       __imp_??6ostream@@QAEAAV0@H@Z 004041b0     msvcirtd:MSVCIRTD.dll
+ 0004:000001b4       __imp_?cout@@3Vostream_withassign@@A 004041b4     msvcirtd:MSVCIRTD.dll
+ 0004:000001b8       \177MSVCIRTD_NULL_THUNK_DATA 004041b8     msvcirtd:MSVCIRTD.dll
+ 0004:000001bc       __imp____p___initenv       004041bc     msvcrtd:MSVCRTD.dll
+ 0004:000001c0       __imp____getmainargs       004041c0     msvcrtd:MSVCRTD.dll
+ 0004:000001c4       __imp___initterm           004041c4     msvcrtd:MSVCRTD.dll
+ 0004:000001c8       __imp____setusermatherr    004041c8     msvcrtd:MSVCRTD.dll
+ 0004:000001cc       __imp___adjust_fdiv        004041cc     msvcrtd:MSVCRTD.dll
+ 0004:000001d0       __imp____p__commode        004041d0     msvcrtd:MSVCRTD.dll
+ 0004:000001d4       __imp__exit                004041d4     msvcrtd:MSVCRTD.dll
+ 0004:000001d8       __imp____set_app_type      004041d8     msvcrtd:MSVCRTD.dll
+ 0004:000001dc       __imp___except_handler3    004041dc     msvcrtd:MSVCRTD.dll
+ 0004:000001e0       __imp___controlfp          004041e0     msvcrtd:MSVCRTD.dll
+ 0004:000001e4       __imp____dllonexit         004041e4     msvcrtd:MSVCRTD.dll
+ 0004:000001e8       __imp___onexit             004041e8     msvcrtd:MSVCRTD.dll
+ 0004:000001ec       __imp___XcptFilter         004041ec     msvcrtd:MSVCRTD.dll
+ 0004:000001f0       __imp___exit               004041f0     msvcrtd:MSVCRTD.dll
+ 0004:000001f4       __imp_??1type_info@@UAE@XZ 004041f4     msvcrtd:MSVCRTD.dll
+ 0004:000001f8       __imp___chkesp             004041f8     msvcrtd:MSVCRTD.dll
+ 0004:000001fc       __imp____p__fmode          004041fc     msvcrtd:MSVCRTD.dll
+ 0004:00000200       __imp____CxxFrameHandler   00404200     msvcrtd:MSVCRTD.dll
+ 0004:00000204       \177MSVCRTD_NULL_THUNK_DATA 00404204     msvcrtd:MSVCRTD.dll
+
+ entry point at        0001:00000a60
+
+ Static symbols
+
+
+FIXUPS: 1b82 fffffea9 13 fffffd47 f 12 15 1a 54f 9 9 b fffffaf0 f 23 f
+FIXUPS: 1883 33 11 f 11 19 454 9 b fffffbc6 d 323 1a ffffff76 fffffee8
+FIXUPS: 1af2 f 3b 1f fffffa10 779 9 9 9 9 b fffff8a8 13 11 f 15 22 15 16
+FIXUPS: 1660 b 8 13 8 b 13 8 f 8 c c 14 19 21 33 12 fffffb85 13 11 1c f
+FIXUPS: 1359 13 8 15 c c 16 23 10 1d 19 1c c c c c f 11 c c 11 13 19 3d
+FIXUPS: 152d f 15 fffffae9 15 1c 17 1d 15 9 18 1c f e 1e 9 18 1c f 28 b24
+FIXUPS: 1ccd b fffff4fb 21 1c 2c d 9 11 9 19 8 d f

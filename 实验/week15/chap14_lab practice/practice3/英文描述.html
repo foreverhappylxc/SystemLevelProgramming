@@ -1,0 +1,251 @@
+<html>
+<head>
+<link rel=stylesheet href="/css/cteform.css" type="text/css">
+<title>Exercise 6: Concurrency Lab &amp;copy; 2002-2005 iCarnegie, Inc. - UI Version 3.15</title>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache"><META HTTP-EQUIV="Expires" CONTENT="-1"><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8"><script language="JavaScript" src="/js/cteform.js"></script>
+<script language="JavaScript" src="/js/ctecoursespt.js"></script>
+<script language="JavaScript1.2">
+CTEUtils_ImgDirURL = "/img";
+CTEUtils_CssDirURL = "/css";
+CTEUtils_JsDirURL = "/js";
+</script>
+<script language="JavaScript1.2" src="/js/ctesortable.js"></script><script language="JavaScript">var filelisting_3724343_tbl_info = new Array();
+filelisting_3724343_tbl_info[1] = new Array();
+filelisting_3724343_tbl_info[1]["name"] = "Size";
+filelisting_3724343_tbl_info[1]["type"] = "number";
+filelisting_3724343_tbl_info[2] = new Array();
+filelisting_3724343_tbl_info[2]["name"] = "Status";
+filelisting_3724343_tbl_info[2]["type"] = "string";
+filelisting_3724343_tbl_info[3] = new Array();
+filelisting_3724343_tbl_info[3]["name"] = "File Type";
+filelisting_3724343_tbl_info[3]["type"] = "string";
+filelisting_3724343_tbl_info[4] = new Array();
+filelisting_3724343_tbl_info[4]["name"] = "Download";
+filelisting_3724343_tbl_info[4]["type"] = "string";
+var filelisting_3724343_tbl = new Object;
+filelisting_3724343_tbl.name = 'filelisting_3724343_tbl';
+filelisting_3724343_tbl.info = filelisting_3724343_tbl_info;
+var Assm = new Object;
+Assm.name = 'Assm';
+Assm.postRenderings = new Array();
+</script></head><body onload="">
+<p><font size="4">Exercise 6: Concurrency Lab</font></p>
+<hr>
+<td width=5><a name="top_3724343"></a></td>
+<table><tr>
+<td width=5><br></td>  <td class=td0_highlight-label width=12 align=right valign=top nowrap >
+     <span class=highlight-label >1.</span></td>
+<td width=5><br></td>  <td valign=top class=td0_x align=left > <a href="#3724343">Go to bottom of question.</a> </td>
+</tr></table>
+<table><tr>
+<td width=5><br></td>  <td valign=top class=td0_x align=left > <head><title>Process Exercise</title></head>
+
+
+<h2>Concurrency Lab:  Understanding concurrent programs</h2>
+
+<h3>Lab Requirements</h3>
+
+<p>This lab assumes that you are using Visual C++ under a 32-bit version of Windows, 
+  using Intel Pentium or Pentium-equivalent machines. The exact compiler and platform 
+  are mostly unimportant, as the lab is reasonably portable, but the lab specifically 
+  uses Pentium features. A list of compatible processors follows; if you don't 
+  have access to such a machine, please talk to your instructor.</p>
+
+<ul><li>Intel Pentium</li>
+    <li>Intel Pentium Pro</li>
+    <li>Intel Celeron</li>
+    <li>Intel Pentium II</li>
+    <li>Intel Pentium III</li>
+    <li>Intel Pentium 4</li>
+    <li>Intel Xeon</li>
+    <li>AMD K6-2</li>
+    <li>AMD K6-III</li>
+    <li>AMD Athlon</li>
+</ul>
+
+<p>The specific criterion for compatibility is an IA-32 processor with the RDTSC 
+  instruction; note that, in particular, the AMD K6 lacks this instruction, as 
+  do all processors prior to the Pentium. If you aren't certain whether your processor 
+  supports this instruction, the lab does include a function to check this, and 
+  will do so automatically each time you run the <code><cite>Timestamp.exe</cite></code> 
+  program. If your processor does not support the RDTSC instruction, you will 
+  be notified with the message "processor does not support timestamp register". 
+</p>
+
+
+
+
+<h2>Thread Programming</h2>
+
+<h3>Getting started</h3>
+
+<p>You can get the code you need for this part of the lab <a href="Exercise6/handout/threadedclient.zip">here</a>.  This archive contains the
+following files:</p>
+
+<dl>
+  <dt>RemoteServer.lib</dt>
+    <dd>The remote server library</dd>
+  <dt>tclient.exe</dt>
+    <dd>Your threaded client.  Initially, this is identical to sclient.exe.
+	</dd>
+  <dt>sclient.exe</dt>
+    <dd>The sequential client;  just a compilation of the original
+        code.  You will be comparing the performance of your threaded
+	tclient.exe to this naive sequential solution.</dd>
+  <dt>servers.h</dt>
+    <dd>Public interface to the remote server library</dd>
+  <dt>ThreadedClient.cpp</dt>
+    <dd>The source file for the threaded client.  You will be
+        modifying this file and handing it in.</dd>
+  <dt>ThreadedClient.dsw</dt>
+    <dd>The Visual C++ workspace for this project</dd>
+  <dt>ThreadedClient.dsp</dt>
+    <dd>The Visual C++ project file for this project</dd>
+  <dt>ThreadedClient.ncb</dt>
+    <dd>Visual C++ support file</dd>
+  <dt>ThreadedClient.opt</dt>
+    <dd>Visual C++ support file</dd>
+</dl>
+
+<h3>Your Task</h3>
+
+<p>In this part of the lab, you're going to use threads to parallelize the
+operation of a very simple database client.  This program has a very simple
+task:  you provide it an account number, and it prints out the personal
+and account information of the client corresponding to that number.</p>
+
+<p>The business for which you're writing this application has decided to
+split the account information into two separate databases: one to
+manage client's personal information (which is bulky, but mostly
+constant), and one to manage the client's account information (which
+is smaller, but changes a lot).  The job of the program is to contact
+each database, access the information, and print it to the user.</p>
+
+<p>Unfortunately, the databases are slow, and your connection to them
+isn't good.  It can, therefore, take awhile to contact each database,
+so in order to make the program respond as quickly as possible, you
+have decided to use threaded programming, so that separate threads
+can contact the databases in parallel.</p>
+
+<p>Your program should work as follows:</p>
+
+<ol><li>The main thread retrieves the account number from the command
+	line.</li>
+    <li>The main thread creates two threads to access the
+        databases and gives them the account number requested.</li>
+    <li>The database threads contact the databases and get the
+	results.  When they have the results, they pass them to
+	the main thread and terminate.</li>
+    <li>The main thread waits for the database threads to terminate,
+	then prints out the results and terminates.</li>
+</ol>
+
+<p>When compiling this program, you may occasionally receive a linker warning 
+  about conflicts with LIBC. You may safely ignore this warning.</p>
+
+<h3>Details</h3>
+
+<p>An existing codebase exists which contacts each database
+sequentially and retrieves information from them.  You should modify
+this program to use threads, but otherwise leave it alone -- the
+output should be in the same style, etc.</p>
+
+<p>The code for contacting the databases is already written for you, in
+the two functions <code>GetPersonalInformation()</code> and
+<code>GetAccountInformation()</code>.  These functions simulate contacting
+a real database server over a slow network connection.  Your worker
+threads should simply call these functions.</p>
+
+<p>To create a thread, use the <code>_beginthread()</code> Windows API
+call:</p>
+
+<p><code>unsigned long _beginthread( void (*startpoint)( void * ), unsigned int stacksize, void *arguments )</code></p>
+
+<p>The first argument is a pointer to the function that Windows will call at the 
+  beginning of the thread; when this function returns, the thread will terminate. 
+  This function takes a <code>void *</code> as an argument, and "returns" <code>void</code>; 
+  be sure to specify that it uses __cdecl calling conventions (see example). The 
+  stack size you should provide is 0; Windows interprets this as a special case 
+  meaning "inherit the stack size from the parent thread", which is fine for our 
+  purposes. The third argument is the argument that will be provided to the thread's 
+  main function. For example, if you declare:</p>
+
+<code><pre>
+ /* our thread's starting function; be sure to explicitly
+    use __cdecl calling conventions */
+ void __cdecl threadfunc( void *args ) {
+    int *n = (int *) args;
+    cout << "Received %d\n" << *n << endl;
+}
+
+int main( int argc, char **argv ) {
+    HANDLE thread;
+    int n = 7;
+    thread = (HANDLE) _beginthread( threadfunc, 0, &n );
+    if (thread == (HANDLE) -1L) {
+	cerr << "Couldn't create thread!" << endl;
+	exit(1);
+    }else {
+ 	WaitForSingleObject( thread, INFINITE );
+	cout << "Done!" << endl;
+	exit(0);
+    }
+}
+</pre></code>
+
+<p><code>_beginthread</code> is prototyped to return an unsigned long.
+In fact, this unsigned long is equivalent to a <b>handle</b>, which is
+a Windows-specific abstraction.  A handle represents some sort of
+operating-system object, like synchronization primitives and opened
+files; in this case, it's a <b>thread handle</b>.  We can do all sorts
+of interesting things to threads using a thread handle, but here we
+just want to wait for the thread to end; we can achieve that using the
+<code>WaitForSingleObject</code> call.  In the project, you'll want to
+wait for any of several handles; this is done using the
+<code>WaitForMultipleObjects</code> call:</p>
+
+<p><code>DWORD WaitForMultipleObjects( DWORD count, CONST HANDLE *handles, BOOL wait_all, DWORD timeout )</code></p>
+
+<p><code>handles</code> points to an array of handles that you're
+interested in; the number of elements in the array must be (at least)
+<code>count</code>.  If <code>wait_all</code> is <code>TRUE</code>,
+then <code>WaitForMultipleObjects</code> will wait for all of the
+handles to become signalled -- if they're thread handles, for all the
+threads to terminate.  <code>timeout</code> specifies how long to
+wait, in milliseconds; the special value <code>INFINITE</code> means
+to wait for all the handles, no matter how long it takes.</p>
+
+<p>You should always check your calls for completion.  In particular,
+<code> _beginthread()</code> can return -1L to signal that it failed to
+create a thread.  If you make any assumptions in your code, be sure
+to state them clearly.</p>
+
+<p>Good luck!</p>
+
+<h3>Evaluation</h3>
+
+<p>You will be graded on this part of the assignment as follows:</p>
+
+<ul><li>30 points for successfully and safely creating the threads.</li>
+    <li>30 points for successfully waiting for those threads to complete.</li>
+    <li>30 points for successfully passing information between the
+        threads.</li>
+    <li>10 points for style and documentation.</li></ul>
+
+</table>
+<td width=5><br>
+</td>
+<a name="3724343"></a><table><tr>
+<td width=5><br></td>  <td valign=top class=td0_x align=left > <a href="#top_3724343">Go to top of question.</a> </td>
+</tr></table>
+<table><tr>
+<td width=5><br></td>  <td class=td0_copyright  align=left valign=top >
+     <span class=copyright ><br>&#169; Copyright 2002 iCarnegie, Inc.  All rights reserved.</span></td>
+</tr></table>
+
+
+</body></html>
+
+ 
+ 
+
